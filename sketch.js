@@ -8,11 +8,10 @@ var player, form,game;
 var player1,player2;
 var players;
 var fruits;
-var fruits_Collected;
 var fruitGroup;
 var fruit1_img, fruit2_img, fruit3_img, fruit4_img, fruit5_img;
 var player_img;
-
+// create the variables for the score and displaying scores. and intialize with zero
 
 function preload(){
   back_img = loadImage("images/jungle.jpg");
@@ -47,19 +46,4 @@ function draw() {
     
      game.end();
    }
-
-   touching(fruit1_img, player_img);
-   touching(fruit2_img, player_img);
-   touching(fruit3_img, player_img);
-   touching(fruit4_img, player_img);
-   touching(fruit5_img, player_img);
-
-}
-
-function touching(lfruit,lplayer) {
-
-  if (lfruit.y > lplayer.y && lfruit.x > lplayer.x) {
-    lfruit.destroy();
-  }
-
 }
