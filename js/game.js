@@ -60,10 +60,13 @@ class Game{
                          fill("black");
                          textSize(25);
                          text(allPlayers[plr].name ,x-25,y+25);
-
+                         
                          
                      }
-                    
+                     fill("white");
+                     textSize(20);
+                     text("player1 :"+ allPlayers.player1.score, 30,50);
+                     text("player2 :"+ allPlayers.player2.score, 80,50);
                      
                  
                  }
@@ -102,12 +105,7 @@ class Game{
                  
                   if (player.index !== null) {
                      //fill code here, to destroy the objects.
-                     fruits.removeImage("fruit1",fruit1_img);
-                     fruits.removeImage("fruit1", fruit2_img);
-                     fruits.removeImage("fruit1", fruit3_img);
-                     fruits.removeImage("fruit1", fruit4_img);
-                     fruits.removeImage("fruit1", fruit5_img);
-                     fruitGroup.remove(fruits);
+                     
                   }            
     }
 
